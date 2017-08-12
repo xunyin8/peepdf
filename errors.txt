@@ -1,0 +1,112 @@
+Traceback (most recent call last):
+  File "/Users/xun/git/peepdf/JSAnalysis.py", line 108, in analyseJS
+    open('jserror.log', 'ab').write(error + newLine)
+  File "/Users/xun/git/peepdf/JSAnalysis.py", line 108, in analyseJS
+    open('jserror.log', 'ab').write(error + newLine)
+  File "/Applications/PyCharm.app/Contents/helpers/pydev/_pydevd_bundle/pydevd_frame.py", line 721, in trace_dispatch
+    self.do_wait_suspend(thread, frame, event, arg)
+  File "/Applications/PyCharm.app/Contents/helpers/pydev/_pydevd_bundle/pydevd_frame.py", line 125, in do_wait_suspend
+    self._args[0].do_wait_suspend(*args, **kwargs)
+  File "/Applications/PyCharm.app/Contents/helpers/pydev/pydevd.py", line 767, in do_wait_suspend
+    time.sleep(0.01)
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/Users/xun/git/peepdf/JSAnalysis.py", line 95, in analyseJS
+    signal.signal(signal.SIGALRM)
+TypeError: signal() takes exactly 2 arguments (1 given)
+Traceback (most recent call last):
+  File "/Users/xun/git/peepdf/JSAnalysis.py", line 104, in analyseJS
+    context = PyV8.JSContext(Global())
+  File "/Users/xun/git/peepdf/PyV8.py", line 522, in __init__
+    _PyV8.JSContext.__init__(self, obj, extensions)
+JSError: JSError: <CALL_AND_RETRY_0> Allocation failed - process out of memory
+Traceback (most recent call last):
+  File "/Users/xun/git/peepdf/JSAnalysis.py", line 104, in analyseJS
+    context = PyV8.JSContext(Global())
+  File "/Users/xun/git/peepdf/PyV8.py", line 522, in __init__
+    _PyV8.JSContext.__init__(self, obj, extensions)
+JSError: JSError: <CALL_AND_RETRY_0> Allocation failed - process out of memory
+Traceback (most recent call last):
+  File "/Users/xun/git/peepdf/JSAnalysis.py", line 104, in analyseJS
+    context = PyV8.JSContext(Global())
+  File "/Users/xun/git/peepdf/PyV8.py", line 522, in __init__
+    _PyV8.JSContext.__init__(self, obj, extensions)
+JSError: JSError: <CALL_AND_RETRY_0> Allocation failed - process out of memory
+Traceback (most recent call last):
+  File "/Users/xun/git/peepdf/JSAnalysis.py", line 104, in analyseJS
+    context = PyV8.JSContext(Global())
+  File "/Users/xun/git/peepdf/PyV8.py", line 522, in __init__
+    _PyV8.JSContext.__init__(self, obj, extensions)
+JSError: JSError: <CALL_AND_RETRY_0> Allocation failed - process out of memory
+Traceback (most recent call last):
+  File "/Users/xun/git/peepdf/JSAnalysis.py", line 104, in analyseJS
+    context = PyV8.JSContext(Global())
+  File "/Users/xun/git/peepdf/PyV8.py", line 522, in __init__
+    _PyV8.JSContext.__init__(self, obj, extensions)
+JSError: JSError: <CALL_AND_RETRY_0> Allocation failed - process out of memory
+Traceback (most recent call last):
+  File "/Users/xun/git/peepdf/JSAnalysis.py", line 104, in analyseJS
+    context = PyV8.JSContext(Global())
+  File "/Users/xun/git/peepdf/PyV8.py", line 522, in __init__
+    _PyV8.JSContext.__init__(self, obj, extensions)
+JSError: JSError: <CALL_AND_RETRY_0> Allocation failed - process out of memory
+Traceback (most recent call last):
+  File "/Users/xun/git/peepdf/peepdf.py", line 494, in <module>
+    ret, pdf = pdfParser.parse(fileName, options.isForceMode, options.isLooseMode, options.isManualAnalysis)
+  File "/Users/xun/git/peepdf/PDFCore.py", line 7033, in parse
+    if pdfObject.urlsFound:
+AttributeError: PDFNum instance has no attribute 'urlsFound'
+Traceback (most recent call last):
+  File "/Users/xun/git/peepdf/peepdf.py", line 494, in <module>
+    ret, pdf = pdfParser.parse(fileName, options.isForceMode, options.isLooseMode, options.isManualAnalysis)
+  File "/Users/xun/git/peepdf/PDFCore.py", line 7033, in parse
+    if pdfObject.urlsFound:
+AttributeError: PDFNum instance has no attribute 'urlsFound'
+Traceback (most recent call last):
+  File "/Users/xun/git/peepdf/peepdf.py", line 494, in <module>
+    ret, pdf = pdfParser.parse(fileName, options.isForceMode, options.isLooseMode, options.isManualAnalysis)
+  File "/Users/xun/git/peepdf/PDFCore.py", line 7033, in parse
+    if pdfObject.urlsFound:
+AttributeError: PDFNum instance has no attribute 'urlsFound'
+Traceback (most recent call last):
+  File "/Users/xun/git/peepdf/peepdf.py", line 494, in <module>
+    ret, pdf = pdfParser.parse(fileName, options.isForceMode, options.isLooseMode, options.isManualAnalysis)
+  File "/Users/xun/git/peepdf/PDFCore.py", line 7033, in parse
+    if pdfObject.urlsFound:
+AttributeError: PDFNum instance has no attribute 'urlsFound'
+Traceback (most recent call last):
+  File "peepdf.py", line 494, in <module>
+    ret, pdf = pdfParser.parse(fileName, options.isForceMode, options.isLooseMode, options.isManualAnalysis)
+  File "/Users/xun/git/peepdf/PDFCore.py", line 7033, in parse
+    if pdfObject.urlsFound:
+AttributeError: PDFNum instance has no attribute 'urlsFound'
+Traceback (most recent call last):
+  File "/Users/xun/git/peepdf/peepdf.py", line 494, in <module>
+    ret, pdf = pdfParser.parse(fileName, options.isForceMode, options.isLooseMode, options.isManualAnalysis)
+  File "/Users/xun/git/peepdf/PDFCore.py", line 7033, in parse
+    if pdfObject.urlsFound:
+AttributeError: PDFNum instance has no attribute 'urlsFound'
+Traceback (most recent call last):
+  File "peepdf.py", line 494, in <module>
+    ret, pdf = pdfParser.parse(fileName, options.isForceMode, options.isLooseMode, options.isManualAnalysis)
+  File "/Users/xun/git/peepdf/PDFCore.py", line 7033, in parse
+    if pdfObject.urlsFound:
+AttributeError: PDFNum instance has no attribute 'urlsFound'
+Traceback (most recent call last):
+  File "/Users/xun/git/peepdf/JSAnalysis.py", line 113, in analyseJS
+    for url in urls:
+  File "/Users/xun/git/peepdf/JSAnalysis.py", line 113, in analyseJS
+    for url in urls:
+  File "/Applications/PyCharm.app/Contents/helpers/pydev/_pydevd_bundle/pydevd_frame.py", line 721, in trace_dispatch
+    self.do_wait_suspend(thread, frame, event, arg)
+  File "/Applications/PyCharm.app/Contents/helpers/pydev/_pydevd_bundle/pydevd_frame.py", line 125, in do_wait_suspend
+    self._args[0].do_wait_suspend(*args, **kwargs)
+  File "/Applications/PyCharm.app/Contents/helpers/pydev/pydevd.py", line 767, in do_wait_suspend
+    time.sleep(0.01)
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/Users/xun/git/peepdf/peepdf.py", line 494, in <module>
+    ret, pdf = pdfParser.parse(fileName, options.isForceMode, options.isLooseMode, options.isManualAnalysis)
+  File "/Users/xun/git/peepdf/PDFCore.py", line 7045, in parse
+    vt.getip(s)
+TypeError: unbound method getip() must be called with vt instance as first argument (got str instance instead)

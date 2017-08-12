@@ -1,0 +1,18 @@
+JSError: SyntaxError: Unexpected number (  @ 4 : 8 )  -> 378.909 768.041 168.85 - 48.6 re
+JSError: SyntaxError: Unexpected number (  @ 4 : 8 )  -> 378.909 768.041 168.85 - 48.6 re
+JSError: SyntaxError: Unexpected number (  @ 1 : 9 )  -> BT / F15 10.9091 Tf 91.801 724.336 Td[(F2016) - 333(Eduardo) - 333(Mart) 111(\
+JSError: SyntaxError: Unexpected number (  @ 1 : 9 )  -> BT / F15 10.9091 Tf 91.801 724.336 Td[(F2016) - 333(Eduardo) - 333(Mart) 111(\
+JSError: SyntaxError: Unexpected number (  @ 1 : 9 )  -> BT / F15 10.9091 Tf 91.801 724.336 Td[(F2016) - 333(Eduardo) - 333(Mart) 111(\
+JSError: SyntaxError: Unexpected number (  @ 1 : 9 )  -> BT / F15 10.9091 Tf 91.801 724.336 Td[(F2016) - 333(Eduardo) - 333(Mart) 111(\
+JSError: SyntaxError: Unexpected number (  @ 1 : 9 )  -> BT / F15 10.9091 Tf 91.801 724.336 Td[(F2016) - 333(Eduardo) - 333(Mart) 111(\
+JSError: TypeError: Cannot call method 'alert' of undefined (  @ 2 : 8 )  ->     app.alert("HALLO WELT");
+JSError: TypeError: Cannot call method 'alert' of undefined (  @ 2 : 8 )  ->     app.alert("HALLO WELT");
+JSError: TypeError: Cannot call method 'alert' of undefined (  @ 1 : 4 )  -> app.alert({
+JSError: TypeError: Cannot call method 'alert' of undefined (  @ 1 : 4 )  -> app.alert({
+JSError: TypeError: Cannot call method 'alert' of undefined (  @ 1 : 4 )  -> app.alert({
+signal() takes exactly 2 arguments (1 given)
+signal() takes exactly 2 arguments (1 given)
+signal() takes exactly 2 arguments (1 given)
+JSError: TypeError: Cannot call method 'open' of undefined (  @ 1 : 4 )  -> app.open("www.google.com")
+JSError: TypeError: Cannot call method 'open' of undefined (  @ 1 : 4 )  -> app.open("https://www.google.com")
+JSError: TypeError: Cannot call method 'open' of undefined (  @ 1 : 4 )  -> app.open("https://www.google.com")

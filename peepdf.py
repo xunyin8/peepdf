@@ -708,6 +708,10 @@ try:
                                     else:
                                         stats += '\t\t' + beforeStaticLabel + element + ': ' + resetColor + str(
                                             elements[element]) + newLine
+                        if pdf.maliciousURLs:
+                            stats += newLine + beforeStaticLabel + '\tMalicious URLs:' + resetColor + newLine
+                            for url in pdf.maliciousURLs:
+                                stats += '\t\t' + beforeStaticLabel + url + newLine
                         if COLORIZED_OUTPUT and not options.avoidColors:
                             beforeStaticLabel = staticColor
                         urls = statsVersion['URLs']

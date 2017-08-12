@@ -26,11 +26,14 @@
 '''
 
 import sys,os,re,hashlib,struct,aes as AES
+import json
 from PDFUtils import *
 from PDFCrypto import *
 from JSAnalysis import *
 from PDFFilters import decodeStream,encodeStream
+from virustotal import vt
 
+vt = vt()
 MAL_ALL = 1
 MAL_HEAD = 2
 MAL_EOBJ = 3
@@ -4770,6 +4773,7 @@ class PDFFile :
         self.numEncodedStreams = 0
         self.numDecodingErrors = 0
         self.maxObjectId = 0
+        self.maliciousURLs = []
 
     def addBody(self, newBody):
         if newBody != None and isinstance(newBody,PDFBody):
@@ -6855,6 +6859,7 @@ class PDFParser :
         pdfFile.setFileName(os.path.basename(fileName))
         isForceMode = forceMode
         isManualAnalysis = manualAnalysis
+        urlBlackList = ["https://www.google.com"]
         
         # Reading the file header
         file = open(fileName,'rb')
@@ -7034,6 +7039,19 @@ class PDFParser :
                                         if pdfObject.hasElement('/Linearized'):
                                             pdfFile.setLinearized(True)
                                             linearizedFound = True
+                                    for url in pdfObject.urlsFound:
+                                        s = str(url)
+                                        if s.startswith('http'):
+                                            report = vt.geturl(s)
+                                        else:
+                                            report = vt.getip(s)
+                                        if report:
+                                            result = json.loads(report)
+                                            if result["positives"] > 0:
+                                                pdfFile.maliciousURLs.append(url)
+                                        else:
+                                            pdfFile.maliciousURLs.append(url)
+
                                 elif objectType == 'stream' and type == '/XRef':
                                     xrefObject = pdfIndirectObject
                                     ret = self.createPDFCrossRefSectionFromStream(pdfIndirectObject)

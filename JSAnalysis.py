@@ -105,8 +105,18 @@ def analyseJS(code, context=None, manualAnalysis=False):
                     open('jserror.log', 'ab').write(error + newLine)
                     errors.append(error)
                     break
-            
+
             if code != '':
+                #look for unescaped urls
+                urls = re.findall('http[s]?://(?:[a-zA-Z]|[0-9]|[$-_@.&+]|[!*\(\),]|(?:%[0-9a-fA-F][0-9a-fA-F]))+', code, re.DOTALL)
+                ips = re.findall('\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}', code, re.DOTALL)
+                for ip in ips:
+                    if ip not in urlsFound:
+                        urlsFound.append(ip)
+                for url in urls:
+                    if url not in urlsFound:
+                        urlsFound.append(url)
+
                 escapedVars = re.findall('(\w*?)\s*?=\s*?(unescape\((.*?)\))', code, re.DOTALL)
                 for var in escapedVars:
                     bytes = var[2]
